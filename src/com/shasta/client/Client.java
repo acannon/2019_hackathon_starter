@@ -25,6 +25,12 @@ public class Client extends ClientRunnable {
     @Override
     public void handleConnect() {
         //TODO IMPLEMENT
+        try {
+            this.sendMessage("hello");
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**
